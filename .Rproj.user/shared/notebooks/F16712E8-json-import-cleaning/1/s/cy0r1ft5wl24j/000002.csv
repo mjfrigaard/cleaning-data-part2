@@ -1,0 +1,4 @@
+"0","# fs::dir_tree(""docs/datausa-api-query-params"")"
+"0","source(""docs/datausa-api-query-params/DataUSA_acs.yg.R"")"
+"0","knitr::kable("
+"0","DataUSA_acs.yg)"

@@ -1,0 +1,61 @@
+<table>
+<colgroup>
+<col width="7%" />
+<col width="17%" />
+<col width="74%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">parameter</th>
+<th align="left">accepted values</th>
+<th align="left">description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">force</td>
+<td align="left">schema_name.table_name (Example)</td>
+<td align="left">Forces the use of a particular data table.</td>
+</tr>
+<tr class="even">
+<td align="left">limit</td>
+<td align="left">integer</td>
+<td align="left">Limits the number of rows returned by the query.</td>
+</tr>
+<tr class="odd">
+<td align="left">order</td>
+<td align="left">any available column name</td>
+<td align="left">Column name to use for ordering the resulting data array.</td>
+</tr>
+<tr class="even">
+<td align="left">show (required)</td>
+<td align="left">any available attribute</td>
+<td align="left">A comma-separated list of attributes to show in the query.</td>
+</tr>
+<tr class="odd">
+<td align="left">sort</td>
+<td align="left">desc or asc</td>
+<td align="left">Changes the sort order of the returned data array.</td>
+</tr>
+<tr class="even">
+<td align="left">sumlevel (required)</td>
+<td align="left">any available sumlevel for the given attribute</td>
+<td align="left">This restricts the data fetched to only display the specified sumlevel(s). If more than one “show” attribute is specified, sumlevel must be a comma-separated list with a value for each attribute.</td>
+</tr>
+<tr class="odd">
+<td align="left">required</td>
+<td align="left">any available column name</td>
+<td align="left">A comma-separated list of column names to be returned in the query.</td>
+</tr>
+<tr class="even">
+<td align="left">where</td>
+<td align="left">see documentation</td>
+<td align="left">Advanced filtering of columns, similar to the WHERE clause on SQL.</td>
+</tr>
+<tr class="odd">
+<td align="left">year</td>
+<td align="left">latest, oldest, all, 4-digit year</td>
+<td align="left">Filters the returned data to the given year.</td>
+</tr>
+</tbody>
+</table>

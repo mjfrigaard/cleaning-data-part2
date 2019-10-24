@@ -1,0 +1,50 @@
+Cleaning data (part 2)
+Advanced cleaning with OpenRefine
+link for slides: http://bit.ly/bu-cleaning-data-p2 
+Be sure to check out these installation instructions before starting this workshop.  
+
+First steps:
+Make sure you've downloaded and installed OpenRefine:
+http://openrefine.org/download.html
+1) Go to the Downloads page
+2) Select the appropriate application for your computer
+See more information on downloading the OpenRefine software here: https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions 
+
+
+
+What we'll cover
+- First things first (software installation check)
+- Web technologies and non-rectangular data types
+- Wrectangling your data
+- Make it reproducible  
+- Share your work!
+Many times the data we encounter on the web (and other places) is in a format we can't directly use, so we need to make some changes to the structure in order to make it more useful.
+
+The internet is full of all kinds of data types, and we want to be able to access, clean, format, restructure, visualize, and analyze all of it. OpenRefine is a tool that helps us take in a variety of data formats and clean it into something we can use.
+
+What is/where are data?
+Data are everywhere we look, and they can be used to measure nearly anything we can imagine, or everything we can say or do. 
+Today we capture and store a massive amount of data electronically. But often times, the format and structure for capturing and measuring data are not ideal for creating visualizations or performing analyses. This means cleaning...
+
+
+  
+Data get collected from apps, devices, sensors, scanned documents, the internet and relational databases. This usually results in a variety of file formats, and before a software algorithm can go looking for answers, the data must be cleaned up and converted into a unified form that the algorithm can understand.
+
+
+
+But cleaning isn't sexy...
+https://www.nytimes.com/2014/08/18/technology/for-big-data-scientists-hurdle-to-insights-is-janitor-work.html
+
+
+
+
+Fundamentals – Formats, Types, and Encodings
+		 	 	 		
+			
+				
+					
+Text files versus binary files 
+				
+			
+		
+

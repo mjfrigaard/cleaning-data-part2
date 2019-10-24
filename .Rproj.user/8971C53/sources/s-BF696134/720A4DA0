@@ -1,0 +1,27 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1571816049416.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4005174589",
+    "id" : "720A4DA0",
+    "lastKnownWriteTime" : 1571887764,
+    "last_content_update" : 1571887764840,
+    "path" : "~/@Working/data-plus-narrative/workshops/cleaning-data-part2/json-import-cleaning.Rmd",
+    "project_path" : "json-import-cleaning.Rmd",
+    "properties" : {
+        "docOutlineSize" : "181",
+        "docOutlineVisible" : "1",
+        "last_setup_crc32" : "BF69613411fdb9e1",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

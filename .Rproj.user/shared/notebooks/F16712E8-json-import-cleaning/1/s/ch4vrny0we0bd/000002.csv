@@ -1,0 +1,2 @@
+"0","MarioWideData <- jsonlite::fromJSON(mario_wide)"
+"0","MarioWideData"

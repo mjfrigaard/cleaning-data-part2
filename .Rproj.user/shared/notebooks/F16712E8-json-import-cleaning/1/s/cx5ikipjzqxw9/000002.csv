@@ -1,0 +1,7 @@
+"0","utils::download.file(url = ""https://api.datausa.io/api/?sort=desc&force=acs.yg&show=geo&sumlevel=msa&year=latest"", "
+"0","              destfile = ""data/json/datausa-acs-yg.json"")"
+"2","trying URL 'https://api.datausa.io/api/?sort=desc&force=acs.yg&show=geo&sumlevel=msa&year=latest'
+"
+"2","downloaded 145 KB
+
+"

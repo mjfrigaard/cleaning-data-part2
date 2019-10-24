@@ -1,0 +1,25 @@
+"0","mario_long <- readr::read_file(file = ""data/json/mario-long.json"")"
+"0","cat(mario_long)"
+"1","[
+  {
+    ""Name"": ""Mario"",
+    ""Age"": 32,
+    ""Occupation"": ""Plumber"",
+    ""Ranking"": 3
+  },
+  {
+    ""Name"": ""Peach"",
+    ""Age"": 21,
+    ""Occupation"": ""Princess"",
+    ""Ranking"": 1
+  },
+  {
+    ""Ranking"": 2
+  },
+  {
+    ""Name"": ""Bowser"",
+    ""Occupation"": ""Koopa"",
+    ""Ranking"": 4
+  }
+]
+"
