@@ -62,7 +62,17 @@ library(jsonlite)
 
 This file imports and cleans various JSON data files from the DataUSA API. 
 
-## JSON Data
+## Why use JSON?
+
+JSON is an object notation language (hence JavaScript Object Notation). The advantage of using an object representation of data (in contrast to a relational table-based model) is that the set of attributes for each object is encapsulated within the object, which results in a flexible representation. 
+
+For example, it may be that one of the objects in the database, compared to other objects, has only a subset of attributes. 
+
+By contrast, in the standard tabular data structure used by a relational database, all the data points should have the same set of attributes (i.e., columns and rows). 
+
+This flexibility in object representation is important in contexts where the data cannot (due to variety or type) naturally be decomposed into a set of structured attributes. 
+
+For example, it can be difficult to define the set of attributes that should be used to represent free text (such as tweets) or images. However, although this representational flexibility allows us to capture and store data in a variety of formats, these data still have to be extracted into a structured format before any analysis can be performed on them.
 
 There are four JSON data types: 
 
