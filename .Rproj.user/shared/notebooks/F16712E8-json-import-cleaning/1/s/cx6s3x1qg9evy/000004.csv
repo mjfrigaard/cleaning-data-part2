@@ -1,9 +1,0 @@
-"0","mario_wide <- readr::read_file(file = ""data/json/mario-wide.json"")"
-"0","cat(mario_wide)"
-"1","[
-  {""Name"" : ""Mario"", ""Age"" : 32, ""Occupation"" : ""Plumber""}, 
-  {""Name"" : ""Peach"", ""Age"" : 21, ""Occupation"" : ""Princess""},
-  {},
-  {""Name"" : ""Bowser"", ""Occupation"" : ""Koopa""}
-]
-"

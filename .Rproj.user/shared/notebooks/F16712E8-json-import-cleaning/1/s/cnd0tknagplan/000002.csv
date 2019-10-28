@@ -1,7 +1,0 @@
-"0","utils::download.file(url = ""http://api.datausa.io/attrs/geo/"", "
-"0","              destfile = ""data/json/geo_attrs.json"")"
-"2","trying URL 'http://api.datausa.io/attrs/geo/'
-"
-"2","downloaded 4.4 MB
-
-"
