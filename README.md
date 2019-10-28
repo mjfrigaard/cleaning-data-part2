@@ -558,4 +558,5 @@ Check to make sure this code is working, then click “OK”.
     OpenRefine](https://www.youtube.com/watch?v=wGVtycv3SS0)
 
 Check out [these slides](http://bit.ly/bu-cleaning-data-p2) and the
-github page for more information\!
+[github page](https://mjfrigaard.github.io/cleaning-data-part2/) for
+more information\!

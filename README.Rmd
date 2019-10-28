@@ -550,7 +550,7 @@ knitr::include_graphics("figs/32-parse-lon.png")
   - [Clean Your Data: Getting Started with OpenRefine](https://www.youtube.com/watch?v=wGVtycv3SS0)
   
 
-Check out [these slides](http://bit.ly/bu-cleaning-data-p2) and the github page for more information!
+Check out [these slides](http://bit.ly/bu-cleaning-data-p2) and the [github page](https://mjfrigaard.github.io/cleaning-data-part2/) for more information!
 
 
 
