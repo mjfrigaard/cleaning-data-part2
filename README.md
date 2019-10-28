@@ -1,12 +1,14 @@
 Cleaning data (part 2)
 ================
 
-## Cleaning data (part 2)
+## Slide 1: Cleaning data (part 2)
 
 Advanced cleaning with OpenRefine link for slides:
 <http://bit.ly/bu-cleaning-data-p2>
 
-## First steps:
+## Slide 2: First steps:
+
+![](figs/01-openrefine.png)<!-- -->
 
 Make sure you’ve downloaded and installed OpenRefine:
 <http://openrefine.org/download.html>
@@ -17,7 +19,7 @@ Make sure you’ve downloaded and installed OpenRefine:
 > See more information on downloading the OpenRefine software here:
 > <https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions>
 
-## What we’ll cover
+## Slide 3: What we’ll cover
 
 1.  First things first (software installation check)
 
@@ -37,14 +39,16 @@ Make sure you’ve downloaded and installed OpenRefine:
 > that helps us take in a variety of data formats and clean it into
 > something we can use.*
 
-## Data file types
+## Slide 4: So much data work to do…
 
 > *Today, we capture and store a massive amount of data electronically.
 > But often, the format and structure for capturing and measuring data
 > are not ideal for creating visualizations or performing analyses. This
 > situation means we need to clean data (prepare them) for analysis.*
 
-## What is/where are data?
+## Slide 5: What is/where are data?
+
+![](figs/02-data-storage.png)<!-- -->
 
 Data are everywhere we look, and they’re being used to measure nearly
 anything we can imagine
@@ -58,24 +62,32 @@ capture.
 > go looking for answers, the data must be cleaned up and converted into
 > a unified form that the algorithm can understand.*
 
-## But cleaning data isn’t sexy
+## Slide 5: But cleaning data isn’t sexy
+
+![](figs/03-janitor-work.png)<!-- -->
 
 <https://www.nytimes.com/2014/08/18/technology/for-big-data-scientists-hurdle-to-insights-is-janitor-work.html>
 
-## Fundamentals – File Types and Structure
+## Slide 6: Fundamentals – File Types and Structure
 
 > *As we’ve noted, the information we find on the web (and other places)
 > is in a format we can’t directly use. In the next few slides, we’re
 > going to present what these formats are, why people use them, and how
 > we can convert them into something we can analyze.*
 
-## Data come in a variety of file formats
+## Slide 8: Data come in a variety of file formats
 
-Someone sends you data in a downloadable file You log into an
-interactive front-end and retrieve the data from a storage system (i.e.,
-an MS SQL server database system) The data are available via a
-continuous stream that’s capturing web traffic (i.e., social media) You
-access the data through an Application Programming Interface (API)
+![](figs/8.1-data-types.png)<!-- -->
+
+Someone sends you data in a downloadable file
+
+You log into an interactive front-end and retrieve the data from a
+storage system (i.e., an MS SQL server database system)
+
+The data are available via a continuous stream that’s capturing web
+traffic (i.e., social media)
+
+You access the data through an Application Programming Interface (API)
 
 > *Each of these methods might create a different file type, so it’s
 > essential to know the strength and weaknesses of each. A single file
@@ -87,13 +99,20 @@ access the data through an Application Programming Interface (API)
 > business. Finally, sometimes, companies or organizations have a portal
 > for accessing data called an Application Programming Interface (API).*
 
-## Types of files: text files
+## Slide 9: Types of files: text files
+
+![](figs/05-plain-text.png)<!-- -->
 
 Computer files generally belong to two broad groups, commonly called
-text files and binary files: Files like web pages, computer source code,
-and open-source programming languages are all text files These files can
-be opened in a text editor (Notepad, Text Edit, etc.) or via the command
-line Humans and computers can read these files
+text files and binary files:
+
+Files like web pages, computer source code, and open-source programming
+languages are all text files
+
+These files can be opened in a text editor (Notepad, Text Edit, etc.) or
+via the command line
+
+Humans and computers can read these files
 
 > *These files consist of only text characters (UTF-8 and UTF-16)*
 
@@ -104,7 +123,9 @@ line Humans and computers can read these files
 > important being that they are more accessible to our collaborators
 > (and future selves\!).*
 
-## Types of files: binary files
+## Slide 10: Types of files: binary files
+
+![](figs/06-binary.png)<!-- -->
 
 Binary files require software to open them and are typically not
 human-readable
@@ -125,7 +146,9 @@ Humans can’t read these files
 > *You can view plain text files, but you probably need to know the
 > language if you’re going to edit or create these files.*
 
-## Rectangular files (spreadsheets)
+## Slide 11: Rectangular files (spreadsheets)
+
+![](figs/07-rectangles.png)<!-- -->
 
 These are files stored in columns and rows (or variables and
 observations)
@@ -140,7 +163,9 @@ OpenOffice) or relational database software.
 > Spreadsheets”](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989)
 > by Karl Broman and Kara Woo.*
 
-## Non-rectangular files (JSON & XML)
+## Slide 12: Non-rectangular files (JSON & XML)
+
+![](figs/08-xml-json.png)<!-- -->
 
 Non-rectangular data files (like JSON and XML) are commonly used on the
 web for storing data.
@@ -159,7 +184,9 @@ in 1996), but still widely used for the same purpose
 > language) is a data description language that’s useful for sharing
 > information between different software systems.*
 
-## JSON objects
+## Slide 13: JSON objects
+
+![](figs/13-json.png)<!-- -->
 
 JSON is an object notation language and stores data in objects and
 arrays
@@ -180,15 +207,355 @@ attributes of the data within the same object.
 > *However, these objects typically need to be coerced into a
 > rectangular object before analyzing.*
 
-## XML objects
+## Slide 14: XML objects
 
-XML (eXtensible Markup Language) is a language used to encode web
-documents and data structures. XML is also useful for transmitting
-information between different software systems and through APIs.
+![](figs/14-xml.png)<!-- -->
 
-[XML](https://en.wikipedia.org/wiki/XML) was designed to be
-“self-descriptive” and carry data in a readable format (by humans and
-machines)
+  - [XML](https://en.wikipedia.org/wiki/XML) (eXtensible Markup
+    Language) is a language used to encode web documents and data
+    structures
 
-> *the difference between XML and HTML is that XML is used to transport
-> information, while HTML is used to display information.*
+  - XML is also useful for transmitting information between different
+    software systems and through APIs
+
+  - XML was designed to be “self-descriptive” and carry data in a
+    readable format
+
+> *XML is also useful for transmitting information between different
+> software systems and through APIs. You can read more about the XML
+> standard here on
+> [W3Schools](https://www.w3schools.com/xml/default.asp).*
+
+This is an example of a complete XML document:
+
+``` xml
+<?xml version="1.0"?> 
+<temperatures>
+      <filename>ISCCPMonthly_avg.nc</filename>
+      <case date="16-JAN-1994"
+            temperature="278.9"/> 
+</temperatures>
+```
+
+> *‘Readable’ here means by humans and machines, and the difference
+> between XML and HTML is that XML is used to transport information,
+> while HTML is used to display information.*
+
+## Slide 15: Why bother with these technologies?
+
+> *These are weird formats–why do we need to spend all this time
+> learning how to use them?*
+
+## Slide 16: API: Application Programming Interface
+
+![](figs/16-api-cat.png)<!-- -->
+
+  - An
+    [API](https://medium.com/@perrysetgo/what-exactly-is-an-api-69f36968a41f)
+    is the set of instructions for accessing or transmitting information
+    between software applications
+
+  - JSON and XML are usually how data are transferred in/out of APIs
+
+Example: [I Know Where Your Cat
+Lives](https://iknowwhereyourcatlives.com/).
+
+From about,
+
+> *“I Know Where Your Cat Lives iknowwhereyourcatlives.com is a data
+> visualization experiment that locates a sample of one million public
+> images of cats on a world map by the latitude and longitude
+> coordinates embedded in their metadata. The cats were accessed via
+> publicly available APIs provided by popular photo sharing websites.
+> The photos were then run through various clustering algorithms using a
+> supercomputer in order to represent the enormity of the data source.”*
+
+## Slide 17: API: Application Programming Interface
+
+![](figs/17-api.png)<!-- -->
+
+1)  Photos from Flickr and Instagram get stored in an API
+
+2)  Requests are made for certain photos with GPS data
+
+> *I know Where Your Cat Lives is a project that uses the APIs of Flickr
+> and Instagram to access certain photos (i.e. photos of cats, or a
+> specific landmark) with GPS data (in something called an `Exif`
+> record).*
+
+## Slide 18: API: Application Programming Interface
+
+3)  Combine image meta data with GPS data from OpenStreetMap API
+
+![](figs/18-api.png)<!-- -->
+
+> *Example: I Know Where Your Cat Lives *
+
+> *I know Where Your Cat Lives is a project that uses the APIs of Flickr
+> and Instagram to access certain photos (i.e. photos of cats, or a
+> specific landmark) with GPS data (in something called an `Exif`
+> record).*
+
+> *GPS data is imported via a map application API, then these photos are
+> placed on a map according to the metadata stored in their photo.*
+
+## Slide 19: API: Application Programming Interface
+
+![](figs/19-cat-api.png)<!-- -->
+
+4)  Use Google Maps to display the image on the satellite image
+
+> *Example: I Know Where Your Cat Lives *
+
+> *I know Where Your Cat Lives is a project that uses the APIs of Flickr
+> and Instagram to access certain photos (i.e. photos of cats, or a
+> specific landmark) with GPS data (in something called an `Exif`
+> record).*
+
+> *GPS data is imported via a map application API, then these photos are
+> placed on a map according to the metadata stored in their photo.*
+
+> *These images and maps are then loaded into an application that load
+> the two at the same time.*
+
+## Slide 20: A Quick Example
+
+-----
+
+## Slide 21: Load Address Data into OpenRefine
+
+![](figs/21-cols.png)<!-- -->
+
+1.  Navigate to this link and load the addresses into OpenRefine:
+
+[Raw CSV address
+data](https://raw.githubusercontent.com/mjfrigaard/cleaning-data-part2/master/data/csv/us-addresses.csv)
+
+2.  Create a new project called us-addresses
+
+APIs let you combine data from multiple sources, and there really is no
+limit to the amount of available API data. Just to list a few:
+
+1.  [data.world](https://apidocs.data.world/api)  
+2.  [datausa.io](https://datausa.io/about/api/)  
+3.  [opensecrets](https://www.opensecrets.org/open-data/api)  
+4.  [govinfo api](https://api.govinfo.gov/docs/)
+
+We will be using the OpenMapQuest API to access longitude and latitude
+information from a .csv file of 234 addresses in Massachusetts and New
+York.
+
+These addresses are in two columns, `street` and `city_state_zip.`
+
+## Slide 22: Create full\_address column
+
+![](figs/22-create-cols.png)<!-- -->
+
+Use the following GREL code to create a new `full_address` column:
+
+`value + ", " + cells["city_state_zip"].value`
+
+Click **OK**.
+
+Select the little arrow on the street column and click on,
+
+**Edit column \> Add column based on this column**
+
+Here we’re going to use the General Refine Expression Language (GREL),
+but OpenRefine also allows for Jython (Python implemented in Java), and
+Clojure (a functional language that resembles Lisp). There are quite a
+few resources out there for GREL expressions, but I like the one from
+Illinois Library. We’re going to use the GREL language to prepare the
+address columns for mapping.
+
+Select the little arrow on the `street` column and click on **Edit
+column \>\> Add column based on this column**.
+
+In the dialogue box under **‘New column name’**, enter the name of the
+new column (`full_address`).
+
+In the section for On error, select `store error`. Under the section for
+the **Expression**, enter the GREL expression below:
+
+`value + ", " + cells["city_state_zip"].value`
+
+This will give us a new column with street, city, state, and zip.
+
+## Slide 23: Arrange columns
+
+![](figs/23-arrange-cols.png)<!-- -->
+
+Select the little arrow on the new `full_address` column and click on,
+
+**Edit column** \> **Move column to the end**
+
+Just to make things a little clearer, we’ll move the new column to the
+end. Moving columns around gives us the ability to view columns
+side-by-side, and provides some visible reassurance about the data
+transformations we’re making.
+
+## Slide 24: MapQuest API
+
+Head over to:
+
+<https://developer.mapquest.com/>
+
+Click on the button to get your Free API Key
+
+Head over to MapQuest and get a Free API Key.
+
+The instructions are fairly straightforward, but you will need to get
+into the developer dashboard.
+
+## Slide 25: Create and Approve MapQuest API Key
+
+![](figs/25-mapquest-api-key.png)<!-- -->
+
+1.  You can create a new key or use the one listed under My Application
+
+![](figs/25.1-approve-keys.png)<!-- -->
+
+2.  Click Manage Keys then Approve All Keys
+
+Head over to MapQuest and get a Free API Key.
+
+The instructions are fairly straightforward, but you will need to get
+into the developer dashboard, and your keys will be under Manage Keys
+
+You can create a new application, or use the one given under My
+Application. Read more about API keys
+[here.](https://developer.mapquest.com/documentation/)
+
+## Slide 26: APIs with OpenRefine
+
+OpenRefine works with GET request APIs.
+
+## Slide 27: Example MapQuest API query
+
+![](figs/27-api-request.png)<!-- -->
+
+Learning the components of API requests is an important part of
+accessing and gathering data. Most sites have at least a little
+documentation about how to access the data available on their API. When
+they don’t, fortunately all requests have similar components and syntax.
+
+The parts of an API request are in the figure above. You can also read
+more on the documentation website here.
+
+## Slide 28: Example API query parameters with GREL
+
+![](figs/28-openrefine-api-request.png)<!-- -->
+
+Click on the new `full_address` column and select, Add column by
+fetching URLs
+
+Follow the steps in the diagram to the right, but refer to the notes
+below for the GREL expression:
+
+After you’ve entered the Expression, check the 1st row in the Preview
+section at the bottom of the dialogue box.
+
+Now we will create another column using OpenRefine’s data enrichment
+abilities. OpenRefine gives us the ability to load various data APIs
+into our existing projects.
+
+New column name = `mapquest_locations`
+
+On error = **store error**
+
+Throttle delay = **1000** milliseconds
+
+Expression = `'http://open.mapquestapi.com/nominatim/v1/search.php?'+
+'format=json&' + 'key=JWbcrLmu5UfJ9n1krjAMdr0jz3QIG0ha&'+ 'q='+
+escape(value, "url")`
+
+## Slide 29: Example API query parameters with GREL
+
+This takes time\!
+
+![](figs/29-json-download.png)<!-- -->
+
+It took me a few minutes to run this API request, so expect to wait a
+bit for the data to load into OpenRefine.
+
+## Slide 30: JSON data
+
+When you’re done, you should see the following JSON data in the new
+`mapquest_locations` column
+
+After OpenRefine is finished loading the data into `mapquest_locations`,
+you’ll see the JSON data is all crammed into a single row. This makes it
+very hard to see what’s in this new column, so we’ll need to parse the
+JSON data into something a little easier to work with.
+
+![](figs/30-json-col.png)<!-- -->
+
+## Slide 31: Parsing JSON data in OpenRefine
+
+![](figs/31-parse-lat.png)<!-- -->
+
+Click on the new mapquest\_locations column and select Edit column \>
+Add column based on this column…
+
+In the dialogue box, enter the following options:
+
+1.  Name new column = `latitude`
+
+2.  On error = `store error`
+
+3.  Expression = `value.parseJson()[0].lat`
+
+4.  Verify this is correct in the Preview pane
+
+Parsing JSON data in OpenRefine is made simpler using GREL’s
+`parseJson()` function. We can enter the following expression into the
+Expression box,
+
+`value.parseJson()[0].lat`
+
+Then we name our new column (`latitude`), and select `store error` (this
+is a good practice in case there was a typo or anything that needs to be
+debugged). We also want to check out the contents in the **Preview**
+pane at the bottom of the dialogue window (make sure it looks like
+`latitude` data).
+
+Repeat the same steps on the `mapquest_locations` column, but this time
+create a `longitude` column
+
+## Slide 32: Parsing JSON data in OpenRefine
+
+Repeating the process is exactly the same as the process above, but I’m
+going to change lat to lon
+
+`value.parseJson()[0].lon`
+
+Check to make sure this code is working, then click “OK”.
+
+![](figs/32-parse-lon.png)<!-- -->
+
+## Slide 32: Check out these links to learn more\!
+
+1.  John R Little has a great [Pragmatic Datafication
+    workshop](https://www.johnlittle.info/presentation/dsvil-2018/) with
+    some great materials, see the [slides]() and [workbook]().
+
+2.  Check out the [OpenRefine GREL documentation on
+    Github](https://github.com/OpenRefine/OpenRefine/wiki/GREL-Other-Functions)
+    (lots of great tidbits in here\!)
+
+3.  Good ’ol fashioned YouTube\! Check out the following video to learn
+    more:
+
+<!-- end list -->
+
+  - [Data Journalism - Cleaning Data in Workbench and
+    OpenRefine](https://www.youtube.com/watch?v=omLnyrT8i1Q)
+
+  - [OpenRefine Beginners
+    Tutorial](https://www.youtube.com/watch?v=wfS1qTKFQoI)
+
+  - [Clean Your Data: Getting Started with
+    OpenRefine](https://www.youtube.com/watch?v=wGVtycv3SS0)
+
+Check out [these slides](http://bit.ly/bu-cleaning-data-p2) and the
+github page for more information\!

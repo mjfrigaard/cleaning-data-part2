@@ -10,26 +10,27 @@
 value + ", " + cells["city_state_zip"].value
 ```
 
-Now we will create a 
+Now we will create another column using OpenRefine's data enrichment abilities. OpenRefine gives us the ability to load various data APIs into our existing projects. 
 
+**New column name** = `mapquest_locations`
 
-```grel
-'http://open.mapquestapi.com/nominatim/v1/search.php?'+ 'format=json&' + 'key=JWbcrLmu5UfJ9n1krjAMdr0jz3QIG0ha&'+ 'q='+ escape(value, "url")
-```
+**On error** = `store error` 
 
-Drop this in the url:
+**Throttle delay** = `1000` milliseconds 
 
-```bash
-http://open.mapquestapi.com/nominatim/v1/search.php?format=json&key=JWbcrLmu5UfJ9n1krjAMdr0jz3QIG0ha&q=777+Brockton+Avenue%2C++Abington+MA+2351
-```
+**Expression** = `'http://open.mapquestapi.com/nominatim/v1/search.php?'+ 'format=json&' + 'key=JWbcrLmu5UfJ9n1krjAMdr0jz3QIG0ha&'+ 'q='+ escape(value, "url")`
 
-And you'll see this JSON:
+Check this by dropping one of the new column contents into the browser.
+
+`http://open.mapquestapi.com/nominatim/v1/search.php?format=json&key=JWbcrLmu5UfJ9n1krjAMdr0jz3QIG0ha&q=777+Brockton+Avenue%2C++Abington+MA+2351`
+
+You should see it turn into a JSON data object
 
 ```json
 [{"place_id":"117715864","licence":"Data © OpenStreetMap contributors, ODbL 1.0. https:\/\/www.openstreetmap.org\/copyright","osm_type":"way","osm_id":"196033306","boundingbox":["42.095747","42.0968228","-70.9694556","-70.967681"],"lat":"42.09617755","lon":"-70.9685309348312","display_name":"Walmart, 777, Brockton Avenue, Abington, Plymouth County, Massachusetts, 02351, United States of America","class":"shop","type":"supermarket","importance":0.621,"icon":"http:\/\/ip-10-116-136-130.mq-us-west-2.ec2.aolcloud.net\/nominatim\/images\/mapicons\/shopping_supermarket.p.20.png"}]
 ```
 
-This takes time!!
+
 
 
 
