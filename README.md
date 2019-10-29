@@ -533,7 +533,58 @@ Check to make sure this code is working, then click “OK”.
 
 ![](figs/32-parse-lon.png)<!-- -->
 
-## Slide 32: Check out these links to learn more\!
+## Slide 33: Save each step as a JSON file
+
+Click on the Undo/ Redo icon next to Facet / Filter
+
+Identify the steps needed to create this data set (6 of them)
+
+![](figs/33-undo-redo.png)<!-- -->
+
+> *I want to make sure and save all the steps I just took to create
+> these new columns, so I’m going to use OpenRefine’s Undo/Redo
+> section.*
+
+## Slide 34: Save each step as a JSON file
+
+I want to make sure and save all the steps I just took to create these
+new columns, so I’m going to use OpenRefine’s Undo/Redo section.
+
+Make sure to save the contents to a file that you can change the
+extension to “`.json`”
+
+Store this in the same folder as the “`us-addresses.csv`” file with some
+description.
+
+  - Click on the Extract button (next to Apply)
+
+  - Make sure all the check the boxes\!
+
+![](figs/34-extract.png)<!-- -->
+
+  - Copy + Paste this into a file and save for the next project\!
+
+<!-- end list -->
+
+``` json
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "street",
+    "expression": "grel:value + \", \" + cells[\"city_state_zip\"].value",
+    "onError": "store-error",
+    "newColumnName": "full_address",
+    "columnInsertIndex": 1,
+    "description": "Create column full_address at index 1 based on column street using expression grel:value + \", \" + cells[\"city_state_zip\"].value"
+  }
+]
+```
+
+## Slide 35: Check out these links to learn more\!
 
 1.  John R Little has a great [Pragmatic Datafication
     workshop](https://www.johnlittle.info/presentation/dsvil-2018/) with
